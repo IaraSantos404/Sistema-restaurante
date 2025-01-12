@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+span.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+span h4 {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    font-family: 'DM sans', serif;
+}
+
+span.contatos {
+    display: flex;
+    gap: 20px;
+}
+
+.top-home {
+    display: flex;
+    background-color: #474747;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 112px;
+    background-color: #fff;
+    padding: 0 30px;
+}
+
+.nav-bar #nav-buttons button{
+    background: none;
+    border: none;
+    color: #2C2F24;
+    font-size: 16px;
+    font-weight: medium;
+    font-family: 'DM sans', serif;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.nav-bar #auth button{
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'DM sans', serif;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.nav-bar #auth .button1{
+    background: none;
+    border: solid;
+    border-color: #AD343E;
+    color: #AD343E;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.nav-bar #auth .button2{
+    background: #AD343E;
+    border: #AD343E;
+    margin-left: 25px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../public/background-home.png");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+
+}
+
+.home h1{
+    text-align: center;
+    font-size: 64px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.home h3{
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}

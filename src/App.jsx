@@ -1,11 +1,13 @@
 import './App.css'
 import Sobre from './pages/sobre'
 import Menu from './pages/menu'
+import Home from './pages/home'
 
 function App() {
 
   return (
     <>
+      <Home/>
       <Sobre />
       <Menu />
     </>
