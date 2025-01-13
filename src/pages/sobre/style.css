@@ -1,0 +1,49 @@
+
+.sobre-container{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: auto;
+  margin-top: 7em;
+}
+
+.text-sobre{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 40%;
+
+}
+
+.text-sobre h3{
+  color: var(--text-color);
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 60.5px;
+  letter-spacing: 0px;
+
+}
+
+.text-sobre .p1{
+  color: var(--text-color);
+  font-family: 'DM sans', sans-serif;
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 1.5em;
+  width: 95%;
+}
+
+.text-sobre .p2{
+  color: var(--text-color);
+  font-family: 'DM sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 1.5em;
+  width: 95%;
+}
