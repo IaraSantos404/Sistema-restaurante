@@ -10,16 +10,16 @@ export default function Sobre() {
         </div>
         <div className="text-sobre">
           <h3>
-            We provide healthy food for your family.
+            Experimente o verdadeiro sabor da Itália.
           </h3>
           <p className="p1">
-            Our story began with a vision to create a unique dining
-            experience that merges fine dining, exceptional service, and a vibrant ambiance.
-            Rooted in city is rich culinary culture, we aim to honor our local roots while infusing a global palate.
+            Nossa jornada começou com uma paixão pela culinária italiana tradicional
+            e um desejo de oferecer uma atmosfera acolhedora e familiar. De massas caseiras
+            a pizzas assadas no forno a lenha, cada prato é feito com amor e ingredientes frescos.
           </p>
           <p className="p2">
-          At place, we believe that dining is not just about food, but also about the overall experience. Our staff,
-          renowned for their warmth and dedication, strives to make every visit an unforgettable event.
+          Descubra a arte da gastronomia italiana, onde cada prato é uma obra-prima, e cada visita
+          é um convite para experimentar o calor, a tradição e a paixão de nossas raízes culinárias.
           </p>
         </div>
 

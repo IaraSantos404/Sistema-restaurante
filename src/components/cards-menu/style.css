@@ -2,9 +2,16 @@
   border: 0.1px solid rgb(155, 149, 149);
   border-radius: 15px;
   width: 306px;
-  min-height: 325px;
+  min-height: 340px;
   overflow: hidden;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; 
+
+}
+
+.box:hover{
+  transform: scale(1.1);
 }
 
 .box-img{
@@ -61,6 +68,11 @@
   font-weight: 400;
   margin-top: 1.6em;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.div2{
+  width: 95%;
+  margin: auto;
 }
 
 

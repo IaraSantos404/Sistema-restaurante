@@ -28,12 +28,15 @@
   cursor: pointer;
 }
 
+.opcoes-menu p:hover{
+  transform: scale(1.1);
+}
+
 .selecionado{
   color: var(--primary);
 }
 
 .div-cards{
-
   width: 90%;
   justify-content: space-evenly;
   margin-top: 6em;
@@ -41,3 +44,4 @@
   gap: 3.5em;
   flex-wrap: wrap;
 }
+

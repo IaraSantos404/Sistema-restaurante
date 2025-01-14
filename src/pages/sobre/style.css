@@ -14,7 +14,7 @@
   display: flex;
   justify-content: start;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
 
 }
 
@@ -46,4 +46,10 @@
   font-weight: 400;
   margin-top: 1.5em;
   width: 95%;
+}
+
+@media screen and (max-width: 768px){
+  .text-sobre{
+    width: 95%;
+  }
 }
