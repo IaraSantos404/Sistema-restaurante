@@ -71,13 +71,13 @@ span.contatos {
     border-color: #AD343E;
     color: #AD343E;
     font-weight: bold;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .nav-bar #auth .button2{
     background: #AD343E;
     border: #AD343E;
-    margin-left: 25px;
+    margin-left: 20px;
     border-radius: 25px;
     color: white;
     font-weight: bold;
