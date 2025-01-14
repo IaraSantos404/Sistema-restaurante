@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carrinho{
+    padding-bottom: 30px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    gap: 10px;
+}
+
+.top img{
+    cursor: pointer;
+}
+
+.top h3{
+    font-family: "DM sans", serif;
+    font-weight: 800;
+    color: #474747;
+    font-size: 40px;
+}
+
+.linha-separacao{
+    background-color: #474747;
+    height: 8px;
+    width: 95%;
+    margin: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.add-produto{
+    color: #AD343E;
+    font-family: "DM sans", serif;
+    font-size: 16px;
+    font-weight: 800;
+    background: none;
+    border: solid;
+    width: 1000px;
+    height: 30px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.avancar-produto{
+    color: #fff;
+    font-family: "DM sans", serif;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #AD343E;
+    border: solid #AD343E;
+    width: 1000px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.botao-avancar{
+    width: 100vw;
+    position: fixed;
+    bottom: 10px;
+}
