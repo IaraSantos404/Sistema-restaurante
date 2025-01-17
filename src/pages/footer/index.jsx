@@ -1,4 +1,6 @@
 import "./style.css"
+import { Link } from "react-router-dom"
+
 import Logo from '../../../public/icons/logo.png'
 import Github from "../../../public/icons/github.png"
 import Instagram from "../../../public/icons/instagram.png"
@@ -15,20 +17,18 @@ export default function Footer() {
               <img src={Logo} alt="" />
             </div>
             <div className="text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempore consequuntur aperiam? Porro tempora ut molestiae esse eveniet?</p>
+              <p>O Taste Italy é mais do que um restaurante, é uma experiência gastronômica
+                que transporta você para o coração da Itália. Sabores autênticos, ingredientes frescos
+                e uma pitada de amor em cada prato. Venha nos visitar e descubra o verdadeiro gosto italiano!</p>
             </div>
             <div className="social-footer">
               <a href="#sobre"><div><img src={Twitter} alt="logo twitter" /></div></a>
-              
+
               <div><img src={Facebook} alt="logo facebook" /></div>
               <div><img src={Instagram} alt="logo instagram" /></div>
               <div><img src={Github} alt="logo github" /></div>
-              
-              
-              
-              
             </div>
-            
+
           </div>
           <div className="div2-footer">
             <h3>Pages</h3>
@@ -36,8 +36,8 @@ export default function Footer() {
               <a href="#home"><li>Home</li></a>
               <a href="#sobre"><li>Sobre</li></a>
               <a href="#menu"><li>Menu</li></a>
-              <a href="#sobre"><li>Login</li></a>
-              <a href="#sobre"><li>Cadastro</li></a>  
+              <Link to="/login"><a><li>Login</li></a></Link>
+              <Link to="/cadastro"><a><li>Cadastro</li></a>  </Link>
             </ul>
           </div>
           <div className="div3-footer">

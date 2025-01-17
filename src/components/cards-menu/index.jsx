@@ -1,5 +1,5 @@
 import "./style.css"
-import Heart from "../../assets/images/heart.svg"
+// import Heart from "../../assets/images/heart.svg"
 import PropTypes from "prop-types";
 
 Card.propTypes = {
@@ -22,9 +22,9 @@ export default function Card({nome, preco, descricao, img}){
       <div id="cards-container">
         <div className="box">
           <div className="box-img">
-            <div className="heart">
+            {/* <div className="heart">
               <img src={Heart} alt="" />
-            </div>
+            </div> */}
             
             <img className="img-comida" src={img} alt="" />
           </div>

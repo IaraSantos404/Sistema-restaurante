@@ -1,7 +1,7 @@
 /* Container principal */
 .login-container {
     width: 320px;
-    background-color: #474747;
+    background-color: #F1F1F1;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -28,7 +28,15 @@
   .login-form label {
     align-self: flex-start;
     margin-bottom: 5px;
-    color: #fff;
+    color: var(--primary);
+  }
+
+  .login-form p{
+    color: #AD343E;
+  }
+
+  .login-form p a{
+    cursor: pointer;
   }
   
   .login-form input {
@@ -55,16 +63,17 @@
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
-    width: 45%;
+    width: 100%;
     text-align: center;
   }
   
-  .register {
+  /* .register {
     background-color: #AD343E;
     color: #fff;
   }
-  
+   */
   .login {
+    margin-top: 1.5em;
     background-color: #AD343E;
     color: #fff;
   }
