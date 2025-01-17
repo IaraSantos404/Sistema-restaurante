@@ -10,7 +10,7 @@ import Drink2 from "../../assets/images/drink2.png"
 export default function Menu(){
   return(
     <>
-      <div id="menu-container">
+      <div id="menu">
         <h1>Nosso menu</h1>
         
         <div className="opcoes-menu">

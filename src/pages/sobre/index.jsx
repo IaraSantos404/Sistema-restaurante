@@ -4,7 +4,7 @@ import imgSobre from "../../assets/images/img-sobre.png"
 export default function Sobre() {
   return (
     <>
-      <div className="sobre-container">
+      <div id="sobre" className="sobre-container">
         <div className="div-image-sobre">
           <img src={imgSobre} alt="" />
         </div>
