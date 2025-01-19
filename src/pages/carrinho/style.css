@@ -59,7 +59,7 @@
     font-weight: 800;
     background-color: #AD343E;
     border: solid #AD343E;
-    width: 1000px;
+    width: 70%;
     height: 30px;
     border-radius: 10px;
     cursor: pointer;
@@ -71,7 +71,7 @@
 }
 
 .botao-avancar{
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 10px;
 }

@@ -1,10 +1,15 @@
+import PropTypes from "prop-types";
 import "./style.css";
 
-export default function AdicionarProduto() {
+AdicionarProduto.propTypes = {
+    onClose: PropTypes.func.isRequired
+}
+
+export default function AdicionarProduto({onClose}) {
     return (
         <>
             <div className="top">
-                <img src="../../../public/icons/icon_voltar.png" alt="icone_voltar" />
+                <img src="../../../public/icons/icon_voltar.png" onClick={onClose} alt="icone_voltar" />
                 <h3>Adicionar Produto</h3>
             </div>
 
@@ -22,9 +27,17 @@ export default function AdicionarProduto() {
                     <input id="file" type="file" />
                 </label>
 
-                <span>
+                <span className="container-inputs">
                     <input className="text" type="text" placeholder="Nome do Produto" />
                     <input className="text" type="number" placeholder="Preço" />
+
+                    <select className="text" id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Categoria</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="entrada">Entrada</option>
+                        <option value="drink">Drink</option>
+                    </select>
+
                     <div className="checkbox">
                         <h3>Disponibilidade</h3>
                         <div className="toggle-wrapper">
@@ -38,7 +51,9 @@ export default function AdicionarProduto() {
                     <textarea className="text-description" type="text" placeholder="Descrição" />
                 </span>
             </div>
-            <button className="button-add">Adicionar</button>
+
+
+            <button type="submit" className="button-add">Adicionar</button>
         </>
     )
 }

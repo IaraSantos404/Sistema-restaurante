@@ -8,8 +8,11 @@ import Menu from './pages/menu';
 import Home from './pages/home';
 import Footer from './pages/footer';
 import Carrinho from "./pages/carrinho"
+import AdicionarProduto from './pages/adicionar-produto';
+import Admin from './pages/admin';
 
 function App() {
+  
   return (
     <Router>
       <Routes>
@@ -29,6 +32,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/carrinho" element={<Carrinho />} />
+        <Route path='/adicionar' element={<AdicionarProduto/>}/>
+        <Route path='/admin' element={<Admin />} />
       </Routes>
     </Router>
   );

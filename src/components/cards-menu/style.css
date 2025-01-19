@@ -7,8 +7,10 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: transform 0.2s ease-in-out; 
-
+  
 }
+
+
 
 .box:hover{
   transform: scale(1.1);
@@ -21,18 +23,24 @@
   position: relative;
 }
 
-.heart{
-  width: 30px;
-  height: 30px;
+.edit{
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 25px; /* Distância do topo */
   right: 25px; /* Distância da direita */
-
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  
+}
+
+.edit img{
+  height: 30px;
+  width: 30px;
+}
+
+.dNone{
+  display: none;
 }
 
 .box-img .img-comida{

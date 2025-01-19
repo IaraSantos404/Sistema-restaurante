@@ -1,0 +1,14 @@
+.adicionar-admin{
+  display: block;
+  padding: 15px;
+  margin: auto;
+  margin-top: 3em;
+  border: none;
+  border-radius: 12px;
+  background-color: #AD343E;
+  font-family: "DM sans", serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}

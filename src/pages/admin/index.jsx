@@ -1,7 +1,12 @@
+import "./style.css";
+// import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./style.css";
 import Card from "../../components/cards-menu";
 import DetalhesDoProduto from "../detalhes-do-produto";
+import AdicionarProduto from "../adicionar-produto";
+import Footer from "../footer";
+
 import Pizza1 from "../../assets/images/pizza1.png";
 import Pizza2 from "../../assets/images/pizza2.svg";
 import Salada from "../../assets/images/salada.png";
@@ -9,9 +14,10 @@ import Macarrao from "../../assets/images/macarrao.png";
 import Drink1 from "../../assets/images/drink1.png";
 import Drink2 from "../../assets/images/drink2.png";
 
-export default function Menu() {
+export default function Admin() {
   const [selectedCategory, setSelectedCategory] = useState("Tudo");
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showModal, setShowModal] = useState(false); // Estado para controlar o modal
 
   const items = [
     {
@@ -62,12 +68,27 @@ export default function Menu() {
     selectedCategory === "Tudo"
       ? items
       : items.filter((item) => item.categoria === selectedCategory);
-
   return (
     <>
+      {/* Home */}
+      <div className="nav-bar" id="nav-bar">
+        <img src="../../../public/icons/logo.png" alt="icon-twitter" />
+
+        <div style={{ margin: 'auto', display: 'flex', gap: '3em' }} className="nav-buttons" id="nav-buttons">
+          <button><a href="#home">Home</a></button>
+          <button ><a href="#sobre">Sobre</a> </button>
+          <button><a href="#menu">Menu</a> </button>
+        </div>
+      </div>
+
+      <div className="home" id="home">
+        <h1>Sinta o sabor da Itália<br />em cada pedaço</h1>
+        <h3>A verdadeira cozinha italiana, feita com paixão</h3>
+      </div>
+
+      {/* Menu */}
       <div id="menu">
         <h1>Nosso menu</h1>
-
         <div className="opcoes-menu">
           {["Tudo", "Drinks", "Entradas", "Pizzas"].map((categoria) => (
             <p
@@ -82,13 +103,12 @@ export default function Menu() {
         <div className="div-cards">
           {filteredItems.map((item, index) => (
             <Card
-              dNone='dNone'
               key={index}
               nome={item.nome}
               preco={item.preco}
               descricao={item.descricao}
               img={item.img}
-              onClick={() => setSelectedProduct(item)} // Abre o modal com o produto selecionado
+              onClick={() => setSelectedProduct(item)}
             />
           ))}
         </div>
@@ -103,6 +123,22 @@ export default function Menu() {
           />
         </div>
       )}
+
+      {/* Botão para abrir o modal */}
+      <button className="adicionar-admin" onClick={() => setShowModal(true)}>
+        Adicionar Produto
+      </button>
+
+      {/* Modal de adicionar produto */}
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <AdicionarProduto onClose={() => setShowModal(false)} />
+          </div>
+        </div>
+      )}
+      <Footer />
+
     </>
-  );
+  )
 }

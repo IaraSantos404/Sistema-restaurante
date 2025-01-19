@@ -1,5 +1,5 @@
 import "./style.css";
-// import Heart from "../../assets/images/heart.svg";
+import Edit from "../../assets/images/edit.svg"
 import PropTypes from "prop-types";
 
 Card.propTypes = {
@@ -8,9 +8,10 @@ Card.propTypes = {
   descricao: PropTypes.string,
   img: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  dNone: PropTypes.string
 };
 
-export default function Card({ nome, preco, descricao, img, onClick }) {
+export default function Card({ nome, preco, descricao, img, onClick, dNone }) {
   const formatarPreco = (valor) => {
     return new Intl.NumberFormat("pt-BR", {
       style: "currency",
@@ -22,9 +23,9 @@ export default function Card({ nome, preco, descricao, img, onClick }) {
     <div id="cards-container" onClick={onClick} style={{ cursor: "pointer" }}>
       <div className="box">
         <div className="box-img">
-          {/* <div className="heart">
-            <img src={Heart} alt="" />
-          </div> */}
+          <div className="edit">
+            <img className={dNone} src={Edit} alt="" />
+          </div>
           <img className="img-comida" src={img} alt={nome} />
         </div>
         <div className="box-text">
