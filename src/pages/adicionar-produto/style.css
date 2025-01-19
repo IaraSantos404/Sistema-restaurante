@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.inputs-produto {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.inputs-produto span .text{
+  width: 750px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: #D9D9D9;
+  font-family: "DM sans", serif;
+  font-weight: 800;
+  color: #474747;
+  font-size: 20px;
+  padding: 10px;
+  opacity: 1;
+}
+
+.inputs-produto span input::placeholder{
+  opacity: 1;
+  color: #474747;
+}
+
+.inputs-produto span textarea{
+  width: 750px;
+  height: 275px;
+  border: none;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  line-height: 1px;
+  display: block;
+  padding: 10px;
+  line-height: 1.5;
+  resize: none;
+  font-family: "DM sans", serif;
+  font-weight: 800;
+  color: #474747;
+  font-size: 20px;
+}
+
+.inputs-produto span textarea::placeholder{
+  opacity: 1;
+  color: #474747;
+}
+
+.inputs-produto span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs-produto span .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 750px;
+  height: 40px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.inputs-produto span .checkbox h3{
+  width: 100vw;
+  font-family: "DM sans", serif;
+  font-weight: 800;
+  color: #474747;
+  font-size: 20px;
+}
+
+.button-add{
+  display: block;
+  width: 470px;
+  height: 90px;
+  margin: auto;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #AD343E;
+  font-family: "DM sans", serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/*##########################################INPUT-IMG##########################################*/
+.custum-file-upload {
+  height: 470px;
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9D9D9;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.custum-file-upload .linha-separacao{
+  margin: 0;
+  height: 4px;
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM sans", serif;
+  font-weight: 800;
+  color: #474747;
+  font-size: 40px;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: #474747;
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+
+
+/*##########################################CHECKBOX##########################################*/
+  .toggle-checkbox {
+    appearance: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    width: 3.5em;
+    height: 1.5em;
+    font: inherit;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: .375em;
+    width: 3em;
+    height: 1.5em;
+    background-color: #ff1414;
+    box-shadow: inset 0 0 .0625em .125em rgb(255 255 255 / .2), inset 0 .0625em .125em rgb(0 0 0 / .4);
+    transition: background-color .4s linear;
+  }
+  
+  .toggle-checkbox:checked + .toggle-container {
+    background-color: #3db505;
+  }
+  
+  .toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: .0625em;
+    border-radius: .3125em;
+    width: 1.375em;
+    height: 1.375em;
+    background-color: #e8e8e8;
+    box-shadow: inset 0 -.0625em .0625em .125em rgb(0 0 0 / .1), inset 0 -.125em .0625em rgb(0 0 0 / .2), inset 0 .1875em .0625em rgb(255 255 255 / .3), 0 .125em .125em rgb(0 0 0 / .5);
+    transition: left .4s;
+  }
+  
+  .toggle-checkbox:checked + .toggle-container > .toggle-button {
+    left: 1.5625em;
+  }

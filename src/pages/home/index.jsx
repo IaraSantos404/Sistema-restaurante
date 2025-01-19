@@ -1,6 +1,32 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.pageYOffset;
+    const start = window.pageYOffset;
+    const distance = top - start;
+    const duration = 500;
+    let startTime = null;
+
+    const animation = (currentTime) => {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+
+      const easing = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+      window.scrollTo(0, start + distance * easing);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    };
+
+    requestAnimationFrame(animation);
+  }};
+
 export default function Home() {
   return (
     <>
@@ -31,7 +57,7 @@ export default function Home() {
 
         <div className="nav-buttons" id="nav-buttons">
           <button><a href="#home">Home</a></button>
-          <button><a href="#sobre">Sobre</a> </button>
+          <button ><a href="#sobre">Sobre</a> </button>
           <button><a href="#menu">Menu</a> </button>
           <Link to="carrinho"><button>Carrinho</button></Link>
           
