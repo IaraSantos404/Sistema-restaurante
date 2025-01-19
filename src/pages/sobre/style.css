@@ -1,3 +1,6 @@
+#sobre{
+  background-color: #f1f1f1;
+}
 
 .sobre-container{
   width: 95%;
@@ -7,7 +10,7 @@
   flex-wrap: wrap;
   gap: 1em;
   margin: auto;
-  margin-top: 7em;
+  padding: 7em 0;
 }
 
 .text-sobre{

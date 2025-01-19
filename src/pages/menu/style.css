@@ -32,8 +32,9 @@
   transform: scale(1.1);
 }
 
-.selecionado{
+.opcoes-menu p.selecionado {
   color: var(--primary);
+  font-weight: bold;
 }
 
 .div-cards{

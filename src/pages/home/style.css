@@ -6,7 +6,10 @@
     margin: 0;
 }
 
-
+#nav-bar{
+    position: fixed;
+    z-index: 1000;
+}
 
 span.redes-sociais {
     display: flex;
@@ -56,6 +59,16 @@ span.contatos {
     cursor: pointer;
 }
 
+.nav-bar #nav-buttons button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-bar #nav-buttons button:hover{
+    transform: scale(1.1);
+}
+
 .nav-bar #auth button{
     width: 120px;
     height: 50px;
@@ -73,6 +86,7 @@ span.contatos {
     font-weight: bold;
     margin-right: 20px;
 }
+
 
 .nav-bar #auth .button2{
     background: #AD343E;
