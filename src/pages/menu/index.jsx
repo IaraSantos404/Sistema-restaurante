@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./style.css";
 import Card from "../../components/cards-menu";
+import Modal from "../../components/modal";
 import Pizza1 from "../../assets/images/pizza1.png";
 import Pizza2 from "../../assets/images/pizza2.svg";
 import Salada from "../../assets/images/salada.png";
@@ -10,6 +11,7 @@ import Drink2 from "../../assets/images/drink2.png";
 
 export default function Menu() {
   const [selectedCategory, setSelectedCategory] = useState("Tudo");
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const items = [
     {
@@ -85,10 +87,14 @@ export default function Menu() {
               preco={item.preco}
               descricao={item.descricao}
               img={item.img}
+              onClick={() => setSelectedProduct(item)} // Define o produto selecionado
             />
           ))}
         </div>
       </div>
+
+      {/* Exibe o modal se houver um produto selecionado */}
+      <Modal produto={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </>
   );
 }

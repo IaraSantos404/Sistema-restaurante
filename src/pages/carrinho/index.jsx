@@ -1,11 +1,13 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Carrinho() {
     return (
         <>
             <div className="carrinho">
                 <div className="top">
-                    <img src="../../../public/icons/icon_voltar.png" alt="icone_voltar" />
+                    <Link to="/"><img src="../../../public/icons/icon_voltar.png" alt="icone_voltar" /></Link>
+                    
                     <h3>Carrinho</h3>
                 </div>
 

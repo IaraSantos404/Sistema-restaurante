@@ -1,0 +1,63 @@
+/* Overlay do modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+/* Botão de fechar */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para imagem no modal */
+.modal-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Preço no modal */
+.modal-preco {
+  font-size: 18px;
+  color: #ad343e;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Botão de adicionar ao carrinho */
+.btn-adicionar {
+  padding: 10px 20px;
+  background-color: #ad343e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-adicionar:hover {
+  opacity: 0.9;
+}

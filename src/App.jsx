@@ -7,6 +7,7 @@ import Sobre from './pages/sobre';
 import Menu from './pages/menu';
 import Home from './pages/home';
 import Footer from './pages/footer';
+import Carrinho from "./pages/carrinho"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/carrinho" element={<Carrinho />} />
       </Routes>
     </Router>
   );

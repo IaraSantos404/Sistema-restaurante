@@ -33,7 +33,8 @@ export default function Home() {
           <button><a href="#home">Home</a></button>
           <button><a href="#sobre">Sobre</a> </button>
           <button><a href="#menu">Menu</a> </button>
-          <button>Carrinho</button>
+          <Link to="carrinho"><button>Carrinho</button></Link>
+          
         </div>
 
         <div className="auth" id="auth">
